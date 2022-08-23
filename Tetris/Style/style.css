@@ -1,0 +1,122 @@
+*{  
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 7px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background:#151712;
+    min-height: 200vh;
+}
+@font-face{
+    font-family: "game";
+    src: url("../Style/HU\ The\ Game.ttf");
+    }
+    
+    @font-face{
+        font-family:"game1";
+        src: url("../Style/HU\ The\ Game\ Cyrillic.ttf");
+    }
+    @font-face{
+        font-family:"game2";
+        src: url("../Style/Ersa.ttf");
+    }
+    *{
+     padding:0;
+     margin: 0;
+    }
+    body{
+   background-image: url("../Style/tetris.gif");
+   overflow: hidden
+    }
+    
+    p.boxmodel2 {
+        width: 300px;
+        height: 150px;
+        background: #900;
+        color: #FFF;
+        padding: 20px;
+        border: 5px solid #CCC;
+    }
+    #titutetris p{
+        margin-top:20px;
+        z-index:fixed;
+        font-family: game2;
+        color:  #2bff00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:60px;
+        margin-bottom: 50%;
+    }
+    
+    #jogar input{
+      z-index:2;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+        cursor:pointer;
+        width:8vw;
+        height: 4vw;
+        font-size:28px;
+        color:rgb(255, 255, 255);
+      font-weight: bold;
+      background-color:#39b329;
+      border-radius: 70px;
+      box-shadow: 0px 5px 0px black;
+    }
+    
+    #jogar input:activer{
+        background-color:#ff0000;
+        opacity: 80%;
+        transition: 0.75s;
+    }
+    
+
+    #reiniciar{
+      visibility: hidden;
+    }
+    #reiniciar input{
+      z-index:2;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+        cursor:pointer;
+        width:10vw;
+        height: 4vw;
+        font-size:28px;
+        color:rgb(255, 255, 255);
+      font-weight: bold;
+      background-color:purple;
+      border-radius: 70px;
+      box-shadow: 0px 5px 0px black;
+    }
+    
